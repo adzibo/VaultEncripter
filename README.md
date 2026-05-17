@@ -86,18 +86,20 @@ pipx install .
 
 ```bash
 vaultenc -c informe.pdf
-```
-
-🔴 Verificar integridad sin descifrar:
-
-```bash
-vaultenc --verify informe.pdf.encrypted
+# -> informe.pdf.encrypted (añade extensión .encrypted)
 ```
 
 🔴 Descifrar un archivo:
 
 ```bash
 vaultenc -d informe.pdf.encrypted
+# -> informe.pdf (quita extensión .encrypted)
+```
+
+🔴 Verificar integridad sin descifrar:
+
+```bash
+vaultenc --verify informe.pdf.encrypted
 ```
 
 🔴 Cifrar + verificar + borrar original + PATH + renombrar archivo:
@@ -109,19 +111,35 @@ vaultenc -c informe.pdf --verify-after --shred -o ~/Downloads/documento.enc
 ⚪ Cifrar un directorio completo en paralelo:
 
 ```bash
-vaultenc -c -r docs/
+vaultenc -cr docs
+# -> docs.enc (añade extensión .enc)
 ```
 
 ⚪ Descifrar directorio:
 
 ```bash
-vaultenc -d -r docs.enc/
+vaultenc -dr docs.enc
+# -> docs.enc.dec (añade extensión .dec)
 ```
 
 ⚪ Cifrar un directorio completo (con 8 workers y salida personalizada):
 
 ```bash
-vaultenc -c -r docs/ -o backup/ -j 8
+vaultenc -cr docs -o backup_enc -j 8
+# -> backup_enc
+```
+
+⚪ Descifrar un directorio completo (con 8 workers y salida personalizada):
+
+```bash
+vaultenc -dr backup_enc -o backup -j 8
+# -> backup
+```
+
+⚫ Comando HELP:
+
+```bash
+vaultenc -h
 ```
 
 ---
