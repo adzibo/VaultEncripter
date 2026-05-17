@@ -1232,7 +1232,7 @@ def process_directory(
     # reproducir la misma clave maestra. En cifrado se genera uno nuevo; en
     # decrypt/verify se lee el existente.
     dest_dir.mkdir(parents=True, exist_ok=True)
-    salt_path = dest_dir / ".vault_salt"
+    salt_path = (source_dir if mode != "encrypt" else dest_dir) / ".vault_salt"
 
     if mode == "encrypt":
         dir_salt = os.urandom(SALT_SIZE)
