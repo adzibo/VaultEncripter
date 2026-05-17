@@ -1,0 +1,25 @@
+[project]
+name = "vaultenc"
+version = "1.0.0"
+description = "Herramienta diseñada para cifrado seguro de archivos y directorios"
+authors = [{name = "AdZiBo"}]
+readme = "README.md"
+requires-python = ">3.10"
+
+dependencies = [
+    "cryptography",
+    "pynacl"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff"
+]
+
+[project.scripts]
+vaultenc = "vaultenc:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
