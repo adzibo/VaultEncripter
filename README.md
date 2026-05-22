@@ -2,7 +2,14 @@
 
 Herramienta CLI diseñada para cifrar archivos y directorios completos mediante primitivas criptográficas avanzadas. Diseñada con un enfoque en seguridad real; cifrado autenticado, derivación de clave resistente a GPU/ASIC, nonces únicos por bloque y borrado seguro de los archivos originales.
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org/) [![XChaCha20-Poly1305](https://img.shields.io/badge/Cipher-XChaCha20--Poly1305-6B21A8?style=flat-square)](https://libsodium.gitbook.io/doc/secret-key_cryptography/aead/chacha20-poly1305/xchacha20-poly1305_construction) [![Scrypt KDF](https://img.shields.io/badge/KDF-Scrypt-0EA5E9?style=flat-square)](https://www.tarsnap.com/scrypt.html)
+<div align="center">
+  
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org/) 
+[![XChaCha20-Poly1305](https://img.shields.io/badge/Cipher-XChaCha20--Poly1305-6B21A8?style=flat-square)](https://libsodium.gitbook.io/doc/secret-key_cryptography/aead/chacha20-poly1305/xchacha20-poly1305_construction) 
+[![Scrypt KDF](https://img.shields.io/badge/KDF-Scrypt-0EA5E9?style=flat-square)](https://www.tarsnap.com/scrypt.html)
+[![Created by](https://img.shields.io/badge/Created_by-AdZiBo-6C63FF?style=flat)](https://github.com/adzibo)
+
+</div>
 
 ---
 ## 1️⃣ Características
@@ -173,6 +180,15 @@ VaultEnc está diseñado para proteger contra:
 
 ⚠️ Para maximizar la seguridad, complementar con cifrado de disco completo (FileVault, LUKS, BitLocker).<br>
 ⚠️ **`vaultenc`** está diseñado y testeado para funcionar en sistemas Linux/Unix.
+
+---
+<div align="center">
+
+**Created by AdZiBo**
+
+[![GitHub](https://img.shields.io/badge/GitHub-adzibo-181717?style=flat&logo=github)](https://github.com/adzibo)
+
+</div>
 
 
 [^1]: **`pipx`** es una herramienta de línea de comandos del ecosistema de Python que permite instalar y ejecutar aplicaciones Python en entornos virtuales aislados. Desarrollado bajo la Python Packaging Authority, facilita el uso de herramientas de consola sin interferir con las dependencias del sistema o de otros proyectos.
